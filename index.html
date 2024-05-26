@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/records.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <title>
+            Seashell Catalog
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1 class="header-title"> Seashell Species Catalog </h1>
+        </header>
+        <main>
+            <button class="register-species-button" id="registerButton"> Register Species</button> 
+            <table class="records">
+                <thead>
+                    <tr>
+                        <th>Popular Name</th>
+                        <th>Scientific Name</th>
+                        <th>Distribution</th>
+                        <th>Family</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>Money Cowrie</td>
+                        <td>Cypraea moneta</td>
+                        <td>Indo-Pacific Ocean</td>
+                        <td>Cypraeidae</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>Snakehead cowrie</td>
+                        <td>Cypraea caputserpentis</td>
+                        <td>Indo-Pacific Ocean</td>
+                        <td>Cypraeidae</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </td>
+                    </tr>   
+                </tbody>
+            </table>
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>New Species</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field" placeholder="Popular name">
+                    <input type="text" class="modal-field" placeholder="Scientific name">
+                    <input type="text" class="modal-field" placeholder="Distribution">
+                    <input type="text" class="modal-field" placeholder="Family">
+                </form>
+                <footer class="modal-footer">
+                    <button class="edit-button">Save</button>
+                    <button class="delete-button">Delete</button>
+                </footer>
+            </div>
+        </main>
+    </body>
+</html>
