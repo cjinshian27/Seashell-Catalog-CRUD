@@ -7,13 +7,14 @@
         <link rel="stylesheet" href="css/button.css">
         <link rel="stylesheet" href="css/records.css">
         <link rel="stylesheet" href="css/modal.css">
+        <script src="main.js" defer></script>
         <title>
             Seashell Catalog
         </title>
     </head>
     <body>
         <header>
-            <h1 class="header-title"> Seashell Species Catalog </h1>
+            <h1 class="header-title header"> Seashell Species Catalog </h1>
         </header>
         <main>
             <button class="register-species-button button" id="registerButton"> Register Species</button> 
@@ -49,21 +50,23 @@
                     </tr>   
                 </tbody>
             </table>
-            <div class="modal-content">
-                <header class="modal-header">
-                    <h2>New Species</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Popular name">
-                    <input type="text" class="modal-field" placeholder="Scientific name">
-                    <input type="text" class="modal-field" placeholder="Distribution">
-                    <input type="text" class="modal-field" placeholder="Family">
-                </form>
-                <footer class="modal-footer">
-                    <button type="button" class="save-button button">Save</button>
-                    <button type="button" class="delete-button button">Delete</button>
-                </footer>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>New Species</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form class="modal-form">
+                        <input type="text" class="modal-field" placeholder="Popular name">
+                        <input type="text" class="modal-field" placeholder="Scientific name">
+                        <input type="text" class="modal-field" placeholder="Distribution">
+                        <input type="text" class="modal-field" placeholder="Family">
+                    </form>
+                    <footer class="modal-footer">
+                        <button type="button" class="save-button button">Save</button>
+                        <button type="button" class="delete-button button">Delete</button>
+                    </footer>
+                </div>
             </div>
         </main>
     </body>
